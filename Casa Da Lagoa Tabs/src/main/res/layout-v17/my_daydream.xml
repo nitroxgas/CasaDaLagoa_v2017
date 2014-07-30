@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lagoa"
+    android:clickable="false">
+
+    <TextView
+        android:id="@+id/dream_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Casa  da  Lagoa\nTemperaturas"
+            android:id="@+id/textView"
+            android:background="@color/black_overlay"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:textAlignment="center"
+            android:singleLine="false"
+            android:gravity="center|center_vertical" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:divider="@color/black_overlay"
+            android:focusableInTouchMode="false"
+            android:id="@+id/lay_temp"
+            android:layout_weight="1"
+            android:longClickable="false"
+            android:focusable="false"
+            android:showDividers="beginning|middle|end"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tmpExt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:textIsSelectable="false"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tmpInt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:textIsSelectable="false"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:singleLine="false"
+                android:textStyle="bold"
+                android:text="@string/sem_conexao"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tmpPlaca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:textIsSelectable="false"
+                android:gravity="center"
+                android:singleLine="false"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
