@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context="br.com.casadalagoa.casadalagoa.casadalagoatabs.Principal$PlaceholderFragment"
+    tools:context="br.com.casadalagoa.app.Principal$PlaceholderFragment"
     android:background="@color/black_overlay"
     android:id="@+id/MainLayout">
 
@@ -137,7 +137,6 @@
                     android:textIsSelectable="false"
                     android:textAlignment="gravity"
                     android:gravity="center"
-                    android:singleLine="false"
                     android:textStyle="bold"
                     android:text="@string/sem_conexao" />
             </LinearLayout>
@@ -410,7 +409,7 @@
                 android:id="@+id/lay_botao2"
                 android:layout_weight="1"
                 android:focusable="false"
-            android:visibility="visible">
+                android:visibility="visible">
 
             <LinearLayout
                 android:orientation="vertical"
@@ -511,7 +510,6 @@
                 android:layout_weight="1"
                 android:textIsSelectable="false"
                 android:gravity="center"
-                android:singleLine="false"
                 android:textStyle="bold" />
 
             <TextView
@@ -525,7 +523,6 @@
                 android:textIsSelectable="false"
                 android:textAlignment="gravity"
                 android:gravity="center"
-                android:singleLine="false"
                 android:textStyle="bold"
                 android:text="@string/sem_conexao" />
 
@@ -551,7 +548,7 @@
             android:layout_weight="2"
             android:background="@color/c_vermelho"
             android:layout_gravity="center"
-            android:clickable="true"
+            android:clickable="false"
             android:textAlignment="center"
             android:visibility="visible" />
 

@@ -6,5 +6,5 @@
     android:background="@drawable/bg_lagoa"
     android:paddingRight="1sp"
     android:paddingBottom="0dp"
-    tools:context="br.com.casadalagoa.casadalagoa.casadalagoatabs.Principal"
+    tools:context="br.com.casadalagoa.app.Principal"
     android:paddingLeft="1sp" />

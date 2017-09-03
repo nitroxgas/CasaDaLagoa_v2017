@@ -3,17 +3,17 @@
     <!-- These settings headers are only used on tablets. -->
 
     <header
-        android:fragment="br.com.casadalagoa.casadalagoa.casadalagoatabs.SettingsActivity$GeneralPreferenceFragment"
+        android:fragment="br.com.casadalagoa.app.SettingsActivity$GeneralPreferenceFragment"
         android:title="@string/pref_header_general" />
 <!--
     <header
-        android:fragment="br.com.casadalagoa.casadalagoa.casadalagoatabs.SettingsActivity$NotificationPreferenceFragment"
+        android:fragment="app.SettingsActivity$NotificationPreferenceFragment"
         android:title="@string/pref_header_notifications" />
 
 -->
 
     <header
-        android:fragment="br.com.casadalagoa.casadalagoa.casadalagoatabs.SettingsActivity$DataSyncPreferenceFragment"
+        android:fragment="br.com.casadalagoa.app.SettingsActivity$DataSyncPreferenceFragment"
         android:title="@string/pref_header_data_sync" />
 
 </preference-headers>
