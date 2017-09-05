@@ -6,7 +6,7 @@
     android:background="@color/black_overlay"
     android:id="@+id/MainLayout">
 
-    <LinearLayout
+          <LinearLayout
             android:id="@+id/lay_chaves"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
@@ -14,8 +14,8 @@
             android:orientation="vertical"
             android:visibility="gone"
             android:showDividers="middle"
-        android:dividerPadding="2sp"
-        android:focusable="false">
+            android:dividerPadding="2sp"
+            android:focusable="false">
 <!--
             <TextView
                 android:id="@+id/section_label"
@@ -35,7 +35,8 @@
                 android:text="@string/title_section1"
                 android:id="@+id/switch1"
                 android:background="@color/black_overlay"
-                android:textStyle="bold|italic"
+                android:textStyle="bold"
+                android:scrollbars="vertical"
                 android:textSize="24sp"
                 android:textOn="Ligado"
                 android:textOff="Desligado"
@@ -50,7 +51,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:id="@+id/lay_botao"
-        android:visibility="gone">
+            android:visibility="gone">
 
             <LinearLayout
                 android:orientation="horizontal"

@@ -118,6 +118,8 @@ public class SettingsActivity extends PreferenceActivity {
         // to reflect the new value, per the Android Design guidelines.
         bindPreferenceSummaryToValue(findPreference("servidor"));
         bindPreferenceSummaryToValue(findPreference("servidor_casa"));
+        bindPreferenceSummaryToValue(findPreference("servidor_mqtt"));
+        bindPreferenceSummaryToValue(findPreference("token_mqtt"));
         bindPreferenceSummaryToValue(findPreference("procura_servidor"));
        // bindPreferenceSummaryToValue(findPreference("notifications_new_message_ringtone"));
         bindPreferenceSummaryToValue(findPreference("sync_frequency"));

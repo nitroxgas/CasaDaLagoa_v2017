@@ -92,9 +92,9 @@ public class Principal extends ActionBarActivity implements ActionBar.TabListene
 
 
     //final String[] estado = {"0","0","0","0","0","0","0","0","0","0","0"};
-    public String servidor = "https://docs.google.com/spreadsheet/pub?key=0AthpB0DCO-YadE5tcC1BVWRzSnNBRkRmLTJfaGhTOFE&single=true&gid=0&range=A1&output=csv";
-    public String servidorGrafico = "https://docs.google.com/spreadsheet/oimg?key=0AthpB0DCO-YadE5tcC1BVWRzSnNBRkRmLTJfaGhTOFE&oid=1&zx=uz4jqb2kuxjw";
-    public String strPlanilha = "https://docs.google.com/spreadsheet/pub?key=0AthpB0DCO-YadE5tcC1BVWRzSnNBRkRmLTJfaGhTOFE&single=true&gid=0&range=A1&output=csv";
+    public String servidor = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTKRkuEEvqvu9J_q4558nLrlBHakz7rhwYbFifu38doQ3FnDBNLvJndlO8oIPEcJA2oX8sfKcz5929n/pub?gid=0&single=true&range=A1&output=csv";
+    public String servidorGrafico = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTKRkuEEvqvu9J_q4558nLrlBHakz7rhwYbFifu38doQ3FnDBNLvJndlO8oIPEcJA2oX8sfKcz5929n/pubchart?oid=1&format=image"; //"https://docs.google.com/spreadsheet/oimg?key=0AthpB0DCO-YadE5tcC1BVWRzSnNBRkRmLTJfaGhTOFE&oid=1&zx=uz4jqb2kuxjw";
+    public String strPlanilha = servidor; //"https://docs.google.com/spreadsheet/pub?key=0AthpB0DCO-YadE5tcC1BVWRzSnNBRkRmLTJfaGhTOFE&single=true&gid=0&range=A1&output=csv";
     public SharedPreferences mPrefs;
     public String LOG_TAG = "FILTRAR";
 
@@ -506,7 +506,7 @@ public class Principal extends ActionBarActivity implements ActionBar.TabListene
         }
 
         // Declara chaves já disponíveis
-        public final String[] arr_Interior = {"Quarto", "Closet", "Cabeceira G", "Cabeceira C", "Escritório", "Escada"};
+        public final String[] arr_Interior = {"Quarto", "Closet", "Cabeceira G", "Cabeceira C", "Escritório", "Escada", "Balcão", "Mesas", "Área Social"};
         public final String[] arr_Exterior = {"Fundos", "Área de Serviço"};
 
         @Override
