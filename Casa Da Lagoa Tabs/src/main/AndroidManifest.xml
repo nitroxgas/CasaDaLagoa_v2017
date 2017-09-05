@@ -46,8 +46,11 @@
                 android:resource="@xml/casa_widget_info" />
         </receiver>
     </application>
+    <service android:name="org.eclipse.paho.android.service.MqttService" >
+    </service>
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
