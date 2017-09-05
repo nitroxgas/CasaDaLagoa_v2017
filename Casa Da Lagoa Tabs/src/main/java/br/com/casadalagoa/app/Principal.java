@@ -208,7 +208,7 @@ public class Principal extends ActionBarActivity implements ActionBar.TabListene
         implementaBotao(alimentador, "?relay=RACAO", "Acionar o alimentador ?", R.drawable.ic_dog_g, estado, true);
 
         Button internet = (Button) findViewById(102);
-        implementaBotao(internet, "?relay=INTERNET", "Reiniciar a internet ?", R.drawable.abc_ic_go_search_api_holo_light, estado, true);
+        implementaBotao(internet, "?relay=INTERNET", "Reiniciar a internet ?", R.drawable.ic_remote_g, estado, true); //abc_ic_go_search_api_holo_light
 
         Button tv = (Button) findViewById(R.id.bt_tvsala);
         implementaBotao(tv, "TV_SALA", "Ligar/Desligar TV ?", R.drawable.ic_remote, estado, false);
@@ -558,7 +558,7 @@ public class Principal extends ActionBarActivity implements ActionBar.TabListene
                         }
                     });
                     tela.clearSslPreferences();
-                    //tela.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+                    tela.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
                     SharedPreferences mPrefs = PreferenceManager.getDefaultSharedPreferences(this.getActivity());
                     //boolean showConfig  = mPrefs.getBoolean("showConfig",false);
                     boolean showGrafico = mPrefs.getBoolean("showGrafico", false);
