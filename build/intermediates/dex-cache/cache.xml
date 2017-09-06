@@ -3,21 +3,111 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\nitro_000\AndroidStudioProjects\CasaDaLagoa\Casa Da Lagoa Tabs\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\George\.android\build-cache\7db19f967d514f118c1bbac8e3e6740ec7d77d83\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="C:\Users\George\AndroidStudioProjects\CasaDaLagoa_v2017\Casa Da Lagoa Tabs\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5a685f1665f9f35848d4daef6bafbed55040b086\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\George\.android\build-cache\ad19b89c6a0b6313e41922b62f9a7f789d799118\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="C:\Users\George\AndroidStudioProjects\CasaDaLagoa_v2017\Casa Da Lagoa Tabs\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a7231ee9a5535979f30faad7312e3d6f8cc82526\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\George\AndroidStudioProjects\CasaDaLagoa_v2017\Casa Da Lagoa Tabs\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\nitro_000\AndroidStudioProjects\CasaDaLagoa\Casa Da Lagoa Tabs\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_cf58478092f67801f6df211798fd01279e85c098\classes.dex" />
+        <dex dex="C:\Users\George\AndroidStudioProjects\CasaDaLagoa_v2017\Casa Da Lagoa Tabs\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_f98a06f834e1e5dadfae4df3d5a436cacf19f939\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\nitro_000\AndroidStudioProjects\CasaDaLagoa\Casa Da Lagoa Tabs\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\George\.gradle\caches\modules-2\files-2.1\org.eclipse.paho\org.eclipse.paho.android.service\1.0.2\2d956522c556caeb35148445ecd059ebe67331f6\org.eclipse.paho.android.service-1.0.2.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="50a30cc17a8c3d44acc710a5e13cd929ac6e198d">
-        <dex dex="C:\Users\nitro_000\AndroidStudioProjects\CasaDaLagoa\Casa Da Lagoa Tabs\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_48f3a12e20654b0b4921193b05e851a18ce2624d\classes.dex" />
+        sha1="2d956522c556caeb35148445ecd059ebe67331f6">
+        <dex dex="C:\Users\George\AndroidStudioProjects\CasaDaLagoa_v2017\Casa Da Lagoa Tabs\build\intermediates\transforms\dex\debug\folders\1000\10\org.eclipse.paho.android.service-1.0.2_3fcb5f8005be7334f15cc3ef1a03dd7de5723409\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\George\.android\build-cache\5c9781f780b7412b88f553e57ebeb9b7b7b61bd5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="C:\Users\George\AndroidStudioProjects\CasaDaLagoa_v2017\Casa Da Lagoa Tabs\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e9123cfac1add384d7d22bb983560f9d6fef3c6f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\George\.gradle\caches\modules-2\files-2.1\org.eclipse.paho\org.eclipse.paho.client.mqttv3\1.0.2\e1c9a81aadf25b884c779298a90750d0ab8013a5\org.eclipse.paho.client.mqttv3-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e1c9a81aadf25b884c779298a90750d0ab8013a5">
+        <dex dex="C:\Users\George\AndroidStudioProjects\CasaDaLagoa_v2017\Casa Da Lagoa Tabs\build\intermediates\transforms\dex\debug\folders\1000\10\org.eclipse.paho.client.mqttv3-1.0.2_d1d39d51c01bc61ff2d916bf695a0c4ec69ef7e5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\George\.android\build-cache\127dcff54070fa7e566d0770a88cefa9f5634ae7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="C:\Users\George\AndroidStudioProjects\CasaDaLagoa_v2017\Casa Da Lagoa Tabs\build\intermediates\transforms\dex\debug\folders\1000\10\classes_37ad9228231492313ce0ffcdd8697e319f1107db\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\George\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="C:\Users\George\AndroidStudioProjects\CasaDaLagoa_v2017\Casa Da Lagoa Tabs\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-26.0.0-alpha1_99702b1b5d86c604cb6416890a7fc93ebafcf38b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\George\.android\build-cache\d27e77648a84c0e23374da5f03edc53ac27fa754\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="C:\Users\George\AndroidStudioProjects\CasaDaLagoa_v2017\Casa Da Lagoa Tabs\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9cade22baeff06ff2b56a1e622f087b6e09b660a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\George\.android\build-cache\8a91965dc51e5c39f07feb46d46875764760c817\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\George\AndroidStudioProjects\CasaDaLagoa_v2017\Casa Da Lagoa Tabs\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1e3f6385588295ca039d5290b83ccb58bd03c9fa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\George\AndroidStudioProjects\CasaDaLagoa_v2017\Casa Da Lagoa Tabs\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6b0947baf7dc7c92436346d59892e5be8f794421">
+        <dex dex="C:\Users\George\AndroidStudioProjects\CasaDaLagoa_v2017\Casa Da Lagoa Tabs\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_81e2865b58b557eab4b9cf07d739bcb3684f9d9b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\George\.android\build-cache\60466fe5121b30053c1672bf9b3bb1d6be1434dc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="C:\Users\George\AndroidStudioProjects\CasaDaLagoa_v2017\Casa Da Lagoa Tabs\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b136f7ffb0be079928dbe5728f25182941f42f75\classes.dex" />
     </item>
 
 </items>

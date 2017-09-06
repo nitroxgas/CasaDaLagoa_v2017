@@ -99,16 +99,13 @@ public class SettingsActivity extends PreferenceActivity {
         // Add 'general' preferences.
         addPreferencesFromResource(R.xml.pref_general);
 
-        // Add 'notifications' preferences, and a corresponding header.
+        PreferenceCategory nfakeHeader = new PreferenceCategory(this);
+        nfakeHeader.setTitle(R.string.pref_header_mqtt);
+        getPreferenceScreen().addPreference(nfakeHeader);
+
+        addPreferencesFromResource(R.xml.pref_mqtt);
 
         PreferenceCategory fakeHeader = new PreferenceCategory(this);
-              /*
-        fakeHeader.setTitle(R.string.pref_header_notifications);
-        getPreferenceScreen().addPreference(fakeHeader);
-        addPreferencesFromResource(R.xml.pref_notification);
-*/
-        // Add 'data and sync' preferences, and a corresponding header.
-        //fakeHeader = new PreferenceCategory(this);
         fakeHeader.setTitle(R.string.pref_header_data_sync);
         getPreferenceScreen().addPreference(fakeHeader);
         addPreferencesFromResource(R.xml.pref_data_sync);
@@ -120,8 +117,8 @@ public class SettingsActivity extends PreferenceActivity {
         bindPreferenceSummaryToValue(findPreference("servidor_casa"));
         bindPreferenceSummaryToValue(findPreference("servidor_mqtt"));
         bindPreferenceSummaryToValue(findPreference("token_mqtt"));
+        //bindPreferenceSummaryToValue(findPreference("token_passw"));
         bindPreferenceSummaryToValue(findPreference("procura_servidor"));
-       // bindPreferenceSummaryToValue(findPreference("notifications_new_message_ringtone"));
         bindPreferenceSummaryToValue(findPreference("sync_frequency"));
     }
 
@@ -245,6 +242,23 @@ public class SettingsActivity extends PreferenceActivity {
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.pref_general);
+
+            // Bind the summaries of EditText/List/Dialog/Ringtone preferences
+            // to their values. When their values change, their summaries are
+            // updated to reflect the new value, per the Android Design
+            // guidelines.
+            bindPreferenceSummaryToValue(findPreference("servidor_mqtt"));
+            bindPreferenceSummaryToValue(findPreference("token_mqtt"));
+            bindPreferenceSummaryToValue(findPreference("token_passw_mqtt"));
+        }
+    }
+
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    public static class MQTTPreferenceFragment extends PreferenceFragment {
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            addPreferencesFromResource(R.xml.pref_mqtt);
 
             // Bind the summaries of EditText/List/Dialog/Ringtone preferences
             // to their values. When their values change, their summaries are

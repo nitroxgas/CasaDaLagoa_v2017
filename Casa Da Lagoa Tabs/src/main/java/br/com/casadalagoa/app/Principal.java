@@ -44,6 +44,12 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.eclipse.paho.android.service.MqttAndroidClient;
+import org.eclipse.paho.client.mqttv3.IMqttActionListener;
+import org.eclipse.paho.client.mqttv3.IMqttToken;
+import org.eclipse.paho.client.mqttv3.MqttClient;
+import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import org.eclipse.paho.client.mqttv3.MqttException;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -101,6 +107,42 @@ public class Principal extends ActionBarActivity implements ActionBar.TabListene
 
     public HttpAsyncTask mHttpAsyncTask = new HttpAsyncTask();
 
+    /*
+    Implementação do MQTTClient....
+     */
+   public void conecta_mqtt(){
+       final String clientId = MqttClient.generateClientId();//+mPrefs.getString("token_mqtt", "XXX");
+       MqttConnectOptions options = new MqttConnectOptions();
+       options.setUserName(mPrefs.getString("token_mqtt", "nitroxgas"));
+       options.setPassword("Cz1mwyh.".toCharArray());
+
+       MqttAndroidClient client =
+               new MqttAndroidClient(this.getApplicationContext(),  mPrefs.getString("servidor_mqtt", "tcp://192.168.1.114:1883"), clientId);
+
+       final String TAG = "MQTTCliente" ;
+       try
+       {
+           IMqttToken token = client.connect(); //options
+
+           token.setActionCallback(new IMqttActionListener() {
+               @Override
+               public void onSuccess(IMqttToken asyncActionToken) {
+                   // We are connected
+                   Log.d(TAG, "onSuccess");
+               }
+
+               @Override
+               public void onFailure(IMqttToken asyncActionToken, Throwable exception) {
+                   // Something went wrong e.g. connection timeout or firewall problems
+                   Log.d(TAG, "onFailure "+ mPrefs.getString("servidor_mqtt", "tcp://192.168.1.114:1883") + " " + clientId + " " + mPrefs.getString("token_mqtt", "nitroxgas") + " " + mPrefs.getString("token_passw", "Cz1mwyh."));
+
+               }
+           });
+       } catch (MqttException e) {
+           e.printStackTrace();
+       }
+   }
+
     @Override
     public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
 
@@ -138,6 +180,7 @@ public class Principal extends ActionBarActivity implements ActionBar.TabListene
                 } else
                     tela.setVisibility(View.INVISIBLE);
             }
+     //conecta_mqtt();
     }
 
     @Override
@@ -157,7 +200,6 @@ public class Principal extends ActionBarActivity implements ActionBar.TabListene
             ConnectivityManager connectivityManager = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
             NetworkInfo activeNetInfo = connectivityManager.getActiveNetworkInfo();
             // NetworkInfo mobNetInfo = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
-
             if (activeNetInfo != null) {
                 if (activeNetInfo.getTypeName().toString().contains("WIFI")) {
                     if (showConfig)
@@ -176,6 +218,7 @@ public class Principal extends ActionBarActivity implements ActionBar.TabListene
                     conectar = false;
                 }
             }
+        conecta_mqtt();
         } else {
             Toast.makeText(getBaseContext(), "Não Conectado!", Toast.LENGTH_LONG).show();
         }

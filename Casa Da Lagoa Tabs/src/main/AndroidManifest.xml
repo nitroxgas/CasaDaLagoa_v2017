@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.casadalagoa.app" >
+    package="br.com.casadalagoa.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/bg_lagoa"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
-            android:name="br.com.casadalagoa.app.Principal"
-            android:label="@string/app_name" >
+            android:name=".Principal"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,9 +24,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="br.com.casadalagoa.app.SettingsActivity"
+            android:name=".SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName="br.com.casadalagoa.app.Principal" >
+            android:parentActivityName=".Principal">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="br.com.casadalagoa.app.Principal" />
@@ -27,8 +34,8 @@
 
         <!-- This service is only used on devices with API v17+ -->
         <service
-            android:name="br.com.casadalagoa.app.MyDaydreamService"
-            android:exported="true" >
+            android:name=".MyDaydreamService"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.service.dreams.DreamService" />
 
@@ -36,7 +43,7 @@
             </intent-filter>
         </service>
 
-        <receiver android:name="br.com.casadalagoa.app.CasaWidget" >
+        <receiver android:name=".CasaWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -45,15 +52,9 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/casa_widget_info" />
         </receiver>
-    </application>
-    <service android:name="org.eclipse.paho.android.service.MqttService" >
-    </service>
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.READ_CALENDAR" />
+        <service android:name="org.eclipse.paho.android.service.MqttService"></service>
+
+    </application>
 
 </manifest>

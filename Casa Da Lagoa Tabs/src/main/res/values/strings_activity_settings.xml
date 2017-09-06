@@ -6,6 +6,8 @@
     <!-- Example General settings -->
     <string name="pref_header_general">Geral</string>
 
+    <string name="pref_header_mqtt">MQTT</string>
+
     <string name="pref_title_social_recommendations">Exibir retorno</string>
     <string name="pref_description_social_recommendations">Exibir o retorno das requisições(trace).</string>
 
@@ -18,11 +20,15 @@
     <string name="pref_casa_title_display_name">Servidor quando em casa</string>
     <string name="pref_casa_default_display_name">http://192.168.1.220/</string>
 
-    <string name="pref_serv_mqtt_display_name">Servidor MQTT</string>
-    <string name="pref_serv_mqtt_default_display_name">http://192.168.1.220:1883/</string>
+    <string name="pref_serv_mqtt_display_name">Servidor</string>
+    <string name="pref_serv_mqtt_default_display_name">tcp://georgesilva2.ddns.net:2017</string>
 
-    <string name="pref_token_mqtt_display_name">Token MQTT</string>
-    <string name="pref_token_mqtt_default_display_name"></string>
+    <string name="pref_token_mqtt_display_name">Usuário</string>
+    <string name="pref_token_mqtt_default_display_name">nitroxgas</string>
+
+    <string name="pref_token_passw_display_name">Senha</string>
+    <string name="pref_token_passw_default_display_name">Não Configurado</string>
+
 
     <string name="pref_title_add_friends_to_messages">Procurar servidor</string>
     <string name="pref_description_add_friends_to_messages">Procurar servidor quando houver erro de conexão.</string>
@@ -39,6 +45,7 @@
 
     <!-- Example settings for Data & Sync -->
     <string name="pref_header_data_sync">Atualização</string>
+
     <string name="pref_title_sync_abas">Atualizar ao trocar de aba</string>
     <string name="pref_description_sync_abas">Ao alternar entre abas, conectar ao servidor para atualizar status?</string>
 

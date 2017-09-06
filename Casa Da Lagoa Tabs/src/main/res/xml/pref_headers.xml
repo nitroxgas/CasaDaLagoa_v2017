@@ -5,15 +5,15 @@
     <header
         android:fragment="br.com.casadalagoa.app.SettingsActivity$GeneralPreferenceFragment"
         android:title="@string/pref_header_general" />
-<!--
-    <header
-        android:fragment="app.SettingsActivity$NotificationPreferenceFragment"
-        android:title="@string/pref_header_notifications" />
 
--->
+    <header
+        android:fragment="br.com.casadalagoa.app.SettingsActivity$MQTTPreferenceFragment"
+        android:title="@string/pref_header_mqtt" />
 
     <header
         android:fragment="br.com.casadalagoa.app.SettingsActivity$DataSyncPreferenceFragment"
         android:title="@string/pref_header_data_sync" />
+
+
 
 </preference-headers>
