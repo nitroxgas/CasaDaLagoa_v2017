@@ -111,10 +111,10 @@ public class Principal extends ActionBarActivity implements ActionBar.TabListene
     Implementação do MQTTClient....
      */
    public void conecta_mqtt(){
-       final String clientId = MqttClient.generateClientId();//+mPrefs.getString("token_mqtt", "XXX");
+       final String clientId = "Cell"+mPrefs.getString("token_mqtt", "XXX"); //MqttClient.generateClientId();//
        MqttConnectOptions options = new MqttConnectOptions();
        options.setUserName(mPrefs.getString("token_mqtt", "nitroxgas"));
-       options.setPassword("Cz1mwyh.".toCharArray());
+       options.setPassword(mPrefs.getString("token_passw", "Cz1mwyh.").toCharArray());
 
        MqttAndroidClient client =
                new MqttAndroidClient(this.getApplicationContext(),  mPrefs.getString("servidor_mqtt", "tcp://192.168.1.114:1883"), clientId);
@@ -122,13 +122,13 @@ public class Principal extends ActionBarActivity implements ActionBar.TabListene
        final String TAG = "MQTTCliente" ;
        try
        {
-           IMqttToken token = client.connect(); //options
+           IMqttToken token = client.connect(options); //options
 
            token.setActionCallback(new IMqttActionListener() {
                @Override
                public void onSuccess(IMqttToken asyncActionToken) {
                    // We are connected
-                   Log.d(TAG, "onSuccess");
+                   Log.d(TAG, "onSuccess"+ mPrefs.getString("servidor_mqtt", "tcp://192.168.1.114:1883") + " " + clientId + " " + mPrefs.getString("token_mqtt", "nitroxgas") + " " + mPrefs.getString("token_passw", "Cz1mwyh."));
                }
 
                @Override
@@ -180,7 +180,7 @@ public class Principal extends ActionBarActivity implements ActionBar.TabListene
                 } else
                     tela.setVisibility(View.INVISIBLE);
             }
-     //conecta_mqtt();
+     conecta_mqtt();
     }
 
     @Override
