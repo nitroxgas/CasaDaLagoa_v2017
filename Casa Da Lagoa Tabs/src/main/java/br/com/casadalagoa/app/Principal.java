@@ -113,8 +113,8 @@ public class Principal extends ActionBarActivity implements ActionBar.TabListene
    public void conecta_mqtt(){
        final String clientId = "Cell"+mPrefs.getString("token_mqtt", "XXX"); //MqttClient.generateClientId();//
        MqttConnectOptions options = new MqttConnectOptions();
-       options.setUserName(mPrefs.getString("token_mqtt", "nitroxgas"));
-       options.setPassword(mPrefs.getString("token_passw", "Cz1mwyh.").toCharArray());
+       options.setUserName(mPrefs.getString("token_mqtt", "xxxxx"));
+       options.setPassword(mPrefs.getString("token_passw", "XXXXX").toCharArray());
 
        MqttAndroidClient client =
                new MqttAndroidClient(this.getApplicationContext(),  mPrefs.getString("servidor_mqtt", "tcp://192.168.1.114:1883"), clientId);
