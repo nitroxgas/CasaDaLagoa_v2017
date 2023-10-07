@@ -128,13 +128,13 @@ public class Principal extends ActionBarActivity implements ActionBar.TabListene
                @Override
                public void onSuccess(IMqttToken asyncActionToken) {
                    // We are connected
-                   Log.d(TAG, "onSuccess"+ mPrefs.getString("servidor_mqtt", "tcp://192.168.1.114:1883") + " " + clientId + " " + mPrefs.getString("token_mqtt", "nitroxgas") + " " + mPrefs.getString("token_passw", "Cz1mwyh."));
+                   Log.d(TAG, "onSuccess"+ mPrefs.getString("servidor_mqtt", "tcp://192.168.1.114:1883") + " " + clientId + " " + mPrefs.getString("token_mqtt", "nitroxgas") + " " + mPrefs.getString("token_passw", "CasaSenhaPadraoh."));
                }
 
                @Override
                public void onFailure(IMqttToken asyncActionToken, Throwable exception) {
                    // Something went wrong e.g. connection timeout or firewall problems
-                   Log.d(TAG, "onFailure "+ mPrefs.getString("servidor_mqtt", "tcp://192.168.1.114:1883") + " " + clientId + " " + mPrefs.getString("token_mqtt", "nitroxgas") + " " + mPrefs.getString("token_passw", "Cz1mwyh."));
+                   Log.d(TAG, "onFailure "+ mPrefs.getString("servidor_mqtt", "tcp://192.168.1.114:1883") + " " + clientId + " " + mPrefs.getString("token_mqtt", "nitroxgas") + " " + mPrefs.getString("token_passw", "CasaSenhaPadraoh."));
 
                }
            });
